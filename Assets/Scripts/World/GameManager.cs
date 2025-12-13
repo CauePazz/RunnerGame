@@ -69,7 +69,7 @@ public class GameManager : MonoBehaviour
 
         if (GameObject.FindWithTag("Player"))
         {
-            playerScore += (int)GameObject.FindWithTag("Player").GetComponent<Rigidbody>().velocity.z;
+            playerScore += (int)GameObject.FindWithTag("Player").GetComponent<Rigidbody>().linearVelocity.z;
         }
         else
         {
